@@ -1,6 +1,6 @@
 <ipojo>
-	<component classname="lemma.HouseImpl">
+	<component classname="house.ArrynHouse">
 		<provides/>
 	</component>
-	<instance component="lemma.HouseImpl" />
+	<instance component="house.ArrynHouse" />
 </ipojo>
