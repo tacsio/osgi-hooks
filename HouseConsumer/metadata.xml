@@ -1,0 +1,7 @@
+<ipojo>
+	<component classname="consumer.Consumer">
+		<requires field="house" policy="dynamic-priority" />
+		<callback transition="validate" method="start"/>
+	</component>
+	<instance component="consumer.Consumer"/>
+</ipojo>

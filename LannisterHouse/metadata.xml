@@ -1,0 +1,6 @@
+<ipojo>
+	<component classname="lemma.HouseImpl">
+		<provides/>
+	</component>
+	<instance component="lemma.HouseImpl" />
+</ipojo>
