@@ -1,2 +1,2 @@
 Private-Package: hook
-Bundle-Activator: hook.Activator.java 
+Bundle-Activator: hook.Activator

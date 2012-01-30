@@ -61,28 +61,7 @@ public class Hide implements EventHook, FindHook {
 			bundles.remove(this.bundle);
 		}
 	}
-
-	void startProxy(ServiceReference ref, Bundle bundle, Object proxy) {
-		Hide hide = new Hide(ctx, ref, bundle);
-		try {
-			hide.open();
-			ctx.registerService((String[]) ref.getProperty("ObjectClass"),
-					proxy, cloneProperties(ref));
-
-		} catch (BundleException e) {
-			e.printStackTrace();
-		}
-	}
 	
-	public Dictionary<String, Object> cloneProperties(ServiceReference ref) {
-
-		Dictionary<String, Object> properties = new Hashtable<String, Object>();
-
-		for (String key : ref.getPropertyKeys()) {
-			properties.put(key, ref.getProperty(key));
-		}
-
-		return properties;
-	}
+	
 
 }
