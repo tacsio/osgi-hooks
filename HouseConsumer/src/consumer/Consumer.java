@@ -7,7 +7,8 @@ public class Consumer {
 	HouseService house;
 
 	public void start() {
-		System.out.println(house.words());
-		System.out.println(house.currentLord());
+		System.out.println();
+		System.out.println("Words:" + house.words());
+		System.out.println("Lord:" +house.currentLord());
 	}
 }
