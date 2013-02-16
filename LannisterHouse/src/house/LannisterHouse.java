@@ -1,12 +1,17 @@
 package house;
 
-import lemma.HouseService;
+import service.HouseService;
 
 public class LannisterHouse implements HouseService {
 
 	@Override
-	public String lemma() {
-		return "Ouça-me Rugir!";
+	public String words() {
+		return "Hear Me Roar!";
+	}
+
+	@Override
+	public String currentLord() {
+		return "Tywin Lannister";
 	}
 
 }

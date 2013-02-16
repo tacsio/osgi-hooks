@@ -1,12 +1,13 @@
 package consumer;
 
-import lemma.HouseService;
+import service.HouseService;
 
 public class Consumer {
 
 	HouseService house;
 
 	public void start() {
-		System.out.println(house.lemma());
+		System.out.println(house.words());
+		System.out.println(house.currentLord());
 	}
 }
